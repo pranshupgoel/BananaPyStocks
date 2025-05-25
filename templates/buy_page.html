@@ -1,0 +1,47 @@
+<html>    
+    <style>
+        .button {
+            background-color: #f30d52;
+            border: none;
+            color: white;
+            padding: 15px 40px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        body {
+            margin: auto;            
+            padding: 10px 10px;
+            text-align: center;
+        }            
+    </style>
+
+
+    <h2 style="text-align: center;"> Your stock requirement: </h2>
+
+    
+    <body style="width: 35%;">
+        <form action="{{ url_for('store')}}" method="post">
+            <label for="cname"><h4>Company name:</h4></label>
+            <select name="cname">
+                {% for company in companies %}
+                    <option value={{ company }}> {{ company }} </option>                 
+        
+                {% endfor %}
+            </select><br>
+
+            <label for="quantity"><h4>Quantity:</h4></label>
+            <input type="text" id="quantity" name="quantity" placeholder="" maxlength= "10" required>
+
+            <br><br><br><br><br>
+
+            <button class= "button" style="position: absolute; left: 500;" type="submit"> Submit </button> 
+            <a href="http://127.0.0.1:5000/dasboard" class="button" style="position: absolute; right: 500;"> Home </a><br><br> 
+            
+        </form> 
+    </body>
+</html>

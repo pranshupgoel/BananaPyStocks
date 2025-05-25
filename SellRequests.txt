@@ -1,0 +1,12 @@
+kevin,Marine,12
+angela,Umbrella Corporation,55
+meredith,Clifton Industries,112
+ryan,Umbrella Corporation,23
+kelly,Mobitech Marketing,57
+creed,Globex Corporation,107
+stanley,Marine,20
+phyllis,Initech,10
+josh,Globex,20
+george,Polyskope,55
+josh,Clifton,35
+alex,Clifton,25

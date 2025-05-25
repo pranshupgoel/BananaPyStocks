@@ -1,0 +1,44 @@
+<html>    
+    <style>
+        .button {
+            background-color: #f30d52;
+            border: none;
+            color: white;
+            padding: 15px 40px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        body {
+            margin: auto;            
+            padding: 10px 10px;
+            text-align: center;
+        }            
+    </style>
+<br><br>
+<a href="http://127.0.0.1:5000/signup" class="button" style="position: absolute; right: 100;"> Create account </a>
+    <h2 style="text-align: center;"> Please fill in your details to continue: </h2>
+    
+
+    <br><br><br>
+    <body style="width: 35%;">
+        <form action="{{ url_for('login_chk')}}" method="post">
+            <label for="uname"><h4>Username</h4></label>
+            <input type="text" id="uname" name="uname" placeholder="" required><br>
+
+
+            <label for="password"><h4>Password</h4></label>
+            <input type="password" id="password" name="password" placeholder="" required>
+            
+            <br><br><br>
+
+            <button class= "button" style="position: absolute; left: 615;" type="submit"> Login </button> 
+            <br><br> 
+            
+        </form> 
+    </body>
+</html>

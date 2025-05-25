@@ -1,0 +1,60 @@
+<html>
+  <head>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=Teko:wght@500&display=swap" rel="stylesheet">    
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+        .center {
+            color: rgb(15, 1, 1);
+            padding: 20px 30px;
+            text-align: center;
+            font-size: 30px;
+            text-align: center;
+            font-family: "Times New Roman", Times, serif;
+        }
+        .button {
+            background-color: #f30d52;
+            border: none;
+            color: white;
+            padding: 20px 52px;
+            text-align: center;
+  
+            text-decoration: none;
+            display: inline-block;
+            font-size: 25px;
+            margin: 4px 2px;
+            cursor: pointer;
+          }
+    </style>
+    </head>
+    <body>
+        <h1 style= "font-family: 'Carrois Gothic', sans-serif; text-align: center;"> Active users </h1>
+
+        <br><br>
+
+        <table style="margin: 0px auto;">
+            <tr>
+                <th> USERNAMES </th>
+            
+            {% for i in users %}
+                <tr>
+
+                    <td>{{ i }}</td> 
+    
+                </tr>
+        
+            {% endfor %}
+            
+        </table>
+
+        <br>
+    </body>
+</html>
